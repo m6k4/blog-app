@@ -1,0 +1,8 @@
+.DS_Store
+docker-compose.yml
+provision.sh
+site.conf
+start.sh
+Vagrantfile
+.vagrant
+api/.rnd
