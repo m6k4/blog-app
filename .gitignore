@@ -6,3 +6,4 @@ start.sh
 Vagrantfile
 .vagrant
 api/.rnd
+cli.sh

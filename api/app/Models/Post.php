@@ -9,14 +9,23 @@ class Post extends Model
 {
 
   protected $with = [
-		'topics',
+		'topic',
+    'author'
 	];
 
-  public function topics(): BelongsTo
+  public function topic(): BelongsTo
   {
     return $this->belongsTo(
       Topic::class,
       'topic_id'
+    );
+  }
+
+  public function author(): BelongsTo
+  {
+    return $this->belongsTo(
+      User::class,
+      'author_id'
     );
   }
 
