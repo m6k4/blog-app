@@ -1,30 +1,42 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-view />
   </div>
-  <router-view/>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<style lang="sass">
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Roboto:wght@100;300;400;700;900&display=swap')
 
-#nav {
-  padding: 30px;
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900')
+.app
+  height: 100%
+  overflow-y: hidden
+  width: 100%
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+*,body,html
+  -moz-osx-font-smoothing: grayscale
+  -webkit-font-smoothing: antialiased
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
+*
+  font-family: 'Roboto', sans-serif
+
+html, body
+  margin: 0
+  padding: 0
+
+html
+  height: 100%
+  width: 100%
+
+body
+  animation-delay: 0.1s
+  animation-duration: 0.1s
+  animation-iteration-count: 1
+  animation-name: fontfix
+  color: #0F3849
+  font-size: 14px
+  height: 100%
+  -animation-timing-function: linear
+  width: 100%
+  overflow: hidden
 </style>
